@@ -79,13 +79,10 @@ li {
 }
 
 .container {
-    background: rgb(209, 158, 209);
+    background:linear-gradient(rgb(211, 188, 211), rgb(214, 167, 167)) ;
     /* background: url("./images/London-unsplash.jpg"); */
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position-y: 30%;
-    background-color: rgba(0, 0, 0, 0.2);
-    background-blend-mode: darken;
     display: flex;
     flex-direction: column;
     align-items: center;
