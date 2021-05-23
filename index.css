@@ -1,0 +1,290 @@
+
+/* Global styles */
+
+*, *:before, *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+    
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    margin: 0;
+    
+}
+
+/* Nav Bar Styles */
+
+a:link, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+.nav {
+    background: rgba(120, 255, 214, 1);
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.nav > a > li {
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.4rem;
+    border-bottom: 4px solid rgba(120, 255, 214, 1);
+    color: black;
+}
+
+.nav > a > li:hover {
+    box-sizing: border-box;
+    border-bottom: 4px solid rosybrown;
+}
+
+
+/* Title Styles  */
+
+.title-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    /* font-family: "Caveat", cursive; */
+    font-size: 1.7rem;
+}
+
+.title-container h1 {
+    font-size: 5rem;
+    text-align: center;
+    /* color: rgb(241, 188, 42); */
+    color: rgba(120, 255, 214, 1);
+}
+
+.title-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color:lightcyan;
+}
+
+.container {
+    background: url("./images/London-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: 30%;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+/* Generic Section Styles */
+
+section {
+    width: 100%;
+    margin-bottom: 30%;
+}
+
+section > div {
+    /* background: linear-gradient(150deg, rgba(120, 255, 214, 1), rgb(6, 168, 155)); */
+    background: rgb(231, 230, 229);
+    height: max-content;
+    transform: skewY(3deg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+section > div > h1 {
+    margin-top: 5rem;
+    transform: skewY(-3deg);
+    font-size: 4rem;
+    color: rgb(58, 199, 157);
+    letter-spacing: 0.3rem;
+    height: 15%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10%;
+    text-shadow: 0px 0px 10px lightseagreen;
+    text-transform: uppercase;
+}
+
+section > div > p {
+    transform: skewY(-3deg);
+    height: 85%;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    /* color: rgb(102, 69, 119); */
+    padding-bottom: 2.5rem;
+    line-height: 3.3rem;
+}
+
+section > div > p:last-of-type {
+    margin-bottom: 9%;
+}
+
+/* About section Styles */
+
+#About > div > img {
+    transform: skewY(-3deg);
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    margin-bottom: 6%;
+    margin-top: 2%;
+}
+
+/* Skills section styles */
+
+.front-end-skills-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    flex-direction: row;
+    transform: skewY(-3deg);
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.front-end-skills-container > img {
+    height: 100px;
+    width: 100px;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    transform: skewY(-3deg);
+    height: 100%;
+}
+
+.img-container > img {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+    margin-bottom: 3rem;
+}
+
+
+.img-container > p {
+    margin-bottom: 0.7rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* Projects section styles */
+
+.projects-img-container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    transform: skewY(-3deg);
+    margin-bottom: 20%;
+}
+
+.projects-img-container > div > img {
+    height: 85%;
+    width: 100%;
+}
+
+.projects-img-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    background: lightseagreen;
+    padding: 21px;
+    border-radius: 9px;
+    border: none;
+    font-family: inherit;
+    color: ivory;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(18, 119, 114);
+}
+/* Active class for when scroll interactions are added */
+
+.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+/* Media queries for larger devices */
+
+@media only screen and (min-width: 768px) {
+    section > div > p {
+        font-size: 2rem;
+        width: 70%;
+        align-self: center;
+    }
+
+    section > div > h1 {
+        font-size: 8rem;
+    }
+
+    .img-container {
+        flex-direction: column;
+        transform: skewY(0deg);
+    }
+
+    .img-container > p {
+        width: 80%;
+    }
+
+    #skills > {
+        height: fit-content;
+    }
+
+
+    .front-end-skills-container {
+        justify-content: space-around;
+        width: 70%;
+        align-self: center;
+        margin-bottom: 8%;
+    }
+
+    .back-end-skills-container {
+        display: flex;
+        flex-direction: row;
+        transform: skewY(-3deg);
+        margin-bottom: 10%;
+    }
+
+    .projects-img-container {
+        flex-direction: row;
+    }
+
+    .projects-img-container > div > img {
+        width: 90%;
+    }
+}
+
