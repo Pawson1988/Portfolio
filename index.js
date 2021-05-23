@@ -1,7 +1,11 @@
 // function for when scroll interactions are added
 
 
-let box = document.querySelectorAll(".box");
+
+console.log(navigator.userAgent);
+
+
+/* let box = document.querySelectorAll(".box");
 
 
 
@@ -22,6 +26,6 @@ let screenPosition = window.innerHeight /1;
         el[i].classList.remove("active");
     }
     
-}}
+}} */
 
 
