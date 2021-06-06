@@ -149,6 +149,14 @@ section > div > p:last-of-type {
     margin-top: 2%;
 }
 
+.certificate-link {
+    color: rgb(58, 199, 157);
+}
+
+.certificate-link:hover {
+    color: rgb(18, 128, 95);
+}
+
 /* Skills section styles */
 
 .front-end-skills-container {
