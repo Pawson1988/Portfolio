@@ -2,7 +2,7 @@
 
 
 
-console.log(navigator.userAgent);
+
 
 
 /* let box = document.querySelectorAll(".box");
