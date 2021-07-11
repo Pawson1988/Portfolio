@@ -25,7 +25,6 @@ class Question {
     }
 
     showQuestion(){
-
         questionShow.textContent = this.question;
         answer1.textContent = this.answerA;
         answer2.textContent = this.answerB;
@@ -36,66 +35,69 @@ class Question {
     }
 }
 
-const question1 = new Question(
+const questionsArray = [
+new Question(
    "How many seasons are there?",
     1,
     2,
     3,
     4,
     4
-);
-
-const question2 = new Question(
+),
+new Question(
     "What is the capital city of France?",
     "London",
     "Rome",
     "Paris",
     "Madrid",
     "Paris"
-)
-
-const question3 = new Question(
+),
+new Question(
     "How old is james?",
     25,
     45,
     67,
-    32,
-    32
-)
-
-const question4 = new Question(
+    33,
+    33
+),
+new Question(
     "He _____ eating his lunch at 1pm yesterday",
     "is",
     "was",
     "were",
     "when",
     "was"
-)
-
-const question5 = new Question(
+),
+new Question(
     "Where is La Sagrada Familia?",
     "Paris",
     "Rome",
     "Barcelona",
     "Sabadell",
     "Barcelona"
-)
+), 
+new Question(
+    "Which animal has the an excellent memory?",
+    "Cat", 
+    "Dog", 
+    "Elephant", 
+    "Crocodile",
+    "Elephant"
+)];
 
 let buttonClicked = false;
 let questionNumber = 1;
 let score = 0;
-let questions = [];
-
+let questLen = questionsArray.length;
 
 // to move to the next question in the array. 
-
 function goToNextQuestion(){
-    if(questionNumber  !== questions.length){
+    if(questionNumber  !== questLen){
     incrementQuestionNumber();
     }
 
     buttonClicked = false;
-    questions[questionNumber - 1].showQuestion();
+    questionsArray[questionNumber - 1].showQuestion();
     resultDisplay.style.display = "hide";
     rightWrongDisplay.style.display = "none"; 
 }
@@ -105,7 +107,6 @@ nextButton.addEventListener("click", goToNextQuestion);
 // to set the quiz up initially
 
 function startQuiz(){
-    questions = [];
     questionNumber = 1;
     score = 0;
     changeScoreDisplay();
@@ -114,8 +115,7 @@ function startQuiz(){
     resultDisplay.style.display = "hide";
     gameOverMsg.textContent = undefined;
     rightWrongDisplay.textContent = undefined;
-    addNewQuestions();
-    questions[questionNumber - 1].showQuestion();
+    questionsArray[questionNumber - 1].showQuestion();
     buttonClicked = false;
 }
 
@@ -133,30 +133,30 @@ function checkQuestion(){
             incrementScore();
             buttonClicked = true;
             
-            if (questionNumber  === questions.length){
-                gameOverMsg.textContent = `Quiz finished, you scored ${score} out of ${questions.length}`;
+            if (questionNumber  === questLen){
+                gameOverMsg.textContent = `Quiz finished, you scored ${score} out of ${questLen}`;
                 buttonClicked = true;
                 localStorage.setItem("endScore", score);
-                localStorage.setItem("outOf", questions.length);
+                localStorage.setItem("outOf", questLen);
                 setTimeout(() => {
                     window.location.assign('endQuizScreen.html');
                 }, 2000);
         }
 
-        } else if (questionNumber !== questions.length && buttonClicked === false) {
-            rightWrongDisplay.textContent = "Try Again!";
+        } else if (questionNumber !== questLen && buttonClicked === false) {
+            rightWrongDisplay.textContent = "Nope!";
             buttonClicked = true;    
         }
 
-            if (questionNumber === questions.length){
-                gameOverMsg.textContent = `Quiz finished, you scored ${score} out of ${questions.length}`;
+            if (questionNumber === questLen){
+                gameOverMsg.textContent = `Quiz finished, you scored ${score} out of ${questLen}`;
                 buttonClicked = true;
-                // to go to the end screen to siplay the final score after 2 seconds
+                // to go to the end screen to display the final score after 1.5 seconds
                 localStorage.setItem("endScore", score);
-                localStorage.setItem("outOf", questions.length);
+                localStorage.setItem("outOf", questLen);
                 setTimeout(() => {
                 window.location.assign('endQuizScreen.html');
-                }, 2000);
+                }, 1500);
         }
 }
 
@@ -166,11 +166,6 @@ for(let answer of answers){
     answer.addEventListener("click", checkQuestion);
 }
 
-
-//to add the questions to the array for when the quiz starts
-function addNewQuestions() {
-    questions.push(question1, question2, question3, question4, question5)
-}
 
 // below: functions to increment the score and question number and then to update their respective displays
 
