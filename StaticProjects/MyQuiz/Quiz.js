@@ -132,6 +132,9 @@ function checkQuestion(){
             rightWrongDisplay.textContent = "Well done!";
             incrementScore();
             buttonClicked = true;
+            setTimeout(() => {
+                goToNextQuestion();
+            }, 500)
             
             if (questionNumber  === questLen){
                 gameOverMsg.textContent = `Quiz finished, you scored ${score} out of ${questLen}`;
@@ -145,7 +148,10 @@ function checkQuestion(){
 
         } else if (questionNumber !== questLen && buttonClicked === false) {
             rightWrongDisplay.textContent = "Nope!";
-            buttonClicked = true;    
+            buttonClicked = true;
+            setTimeout(() => {
+                goToNextQuestion();
+            }, 500)    
         }
 
             if (questionNumber === questLen){
