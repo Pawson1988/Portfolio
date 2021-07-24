@@ -167,7 +167,7 @@ function checkQuestion(){
 }
 
 
-// to loop through the answer, once an answer is clicked it will then be checked by the abover function (checkQuestion)
+// to loop through the answer, once an answer is clicked it will then be checked by the above function (checkQuestion)
 for(let answer of answers){
     answer.addEventListener("click", checkQuestion);
 }
