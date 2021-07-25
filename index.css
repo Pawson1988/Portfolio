@@ -243,6 +243,14 @@ button:hover {
     opacity: 1;
 }
 
+.backToTopBtn {
+    display: absolute; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    opacity: .5;
+}
 
 /* Media queries for larger devices */
 
