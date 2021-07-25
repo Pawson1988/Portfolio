@@ -236,7 +236,7 @@ section > div > p:last-of-type {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
 }
 
 .form-element {
@@ -355,6 +355,10 @@ button:hover {
 
     .projects-img-container > div > img {
         width: 90%;
+    }
+
+    .contact-form {
+        width: 50%;
     }
 }
 
