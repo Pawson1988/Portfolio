@@ -1,159 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-178431604-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-178431604-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'UA-178431604-1');
-</script>
+      gtag("config", "UA-178431604-1");
+    </script>
 
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio de James </title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio de James</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="index.js"></script>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#About"><li class="nav-link">About</li></a>
+      <a href="#Skills"><li class="nav-link">Skills</li></a>
+      <a href="#Projects"><li class="nav-link">Projects</li></a>
+      <a href="mailto:pawson1988@me.com"><li class="nav-link">Contact</li></a>
+    </div>
 
-<div class="nav">
-        <a href="#About"><li class="nav-link">About</li></a>
-        <a href="#Skills"><li class="nav-link">Skills</li></a>
-        <a href="#Projects"><li class="nav-link">Projects</li></a>
-        <a href="mailto:pawson1988@me.com"><li class="nav-link">Contact</li></a>
-</div>
-
-<!-- Full Page Container -->
+    <!-- Full Page Container -->
     <div class="container">
+      <!-- Top of page  -->
+      <div class="title-container">
+        <h1>JAMES PAWSON</h1>
+        <h2>FULL STACK NODEJS AND REACT DEVELOPER</h2>
+      </div>
 
- <!-- Top of page  -->
-        <div class="title-container">
-            <h1>JAMES PAWSON</h1>
-            <h2>FULL STACK NODEJS DEVELOPER</h2>
+      <!-- Skills section -->
+
+      <section id="Skills">
+        <div>
+          <h1>Skills</h1>
+
+          <div class="front-end-skills-container">
+            <img src="./images/html.png" alt="HTML5 Logo" />
+            <img src="./images/css-3.png" alt="CSS3 Logo" />
+            <img src="./images/Js_logo.png" alt="JavaScript Logo" />
+          </div>
+
+          <div class="back-end-skills-container">
+            <div class="img-container">
+              <img src="./images/nodejs-icon.svg" alt="node JS icon" />
+              <p>Strong understanding of Back-End JavaScript</p>
+              <p>NPM and Modules</p>
+              <p>MVP</p>
+              <p>Dynamic templating with EJS</p>
+              <p>Good knowledge of the ExpressJS framework</p>
+              <p>Rest API</p>
+              <p>Full CRUD application with MongoDB</p>
+            </div>
+
+            <div class="img-container">
+              <img src="./images/expressjs.svg" alt="express js icon" />
+              <p>RESTful Routing</p>
+              <p>Connecting Express to MongoDB</p>
+              <p>Serving static assets</p>
+              <p>Express error handling with custom error handling</p>
+              <p>Express Router, cookies, session and Flash</p>
+              <p>Authentication with encryption</p>
+              <p>Security</p>
+            </div>
+
+            <div class="img-container">
+              <img src="./images/react-2.svg" alt="react JS icon" />
+              <p>JSX</p>
+              <p>Rendering elements</p>
+              <p>Functional and Class components</p>
+              <p>Props</p>
+              <p>Top-Down Flow of Data</p>
+              <p>Hooks - useState and useEffect</p>
+              <p>Styling</p>
+              <p>Using APIs with React</p>
+            </div>
+
+            <div class="img-container">
+              <img src="./images/mongodb-icon-1.svg" alt="Mongo DB icon" />
+              <p>
+                One to One, One to Many, One to Few and Many to Many database
+                schemas
+              </p>
+              <p>Validation</p>
+              <p>Full CRUD</p>
+            </div>
+
+            <div class="img-container">
+              <img src="./images/wordpress-blue.svg" alt="Wordpress icon" />
+              <p>Custom website creation</p>
+              <p>Use of plugins</p>
+              <p>Elementor</p>
+              <p>Themes</p>
+              <p>Forms</p>
+              <p>WooCommerce</p>
+            </div>
+          </div>
         </div>
+      </section>
 
- <!-- Skills section -->
+      <!-- About Section -->
 
-        <section id="Skills">
+      <section id="About">
+        <div>
+          <h1>About</h1>
+
+          <p>A professional full-stack web developer</p>
+
+          <p class="certificate-link">
+            <a href="./images/BootcampCertificate.pdf">BootCamp Certificate</a>
+          </p>
+
+          <p>
+            Around two years ago, I started to learn HTML, CSS and JavaScript
+            with TreeHouse as it was something I'd wanted to do ever since I was
+            around 10 years old and used my first computer in primary school.
+            However, I took a different route in education and this was left by
+            the wayside, recently my passion has been re-ignited.
+            <br />
+            <br />
+            After becoming confident with these three languages, I decided to
+            take a plunge on a full stack course which was Colt Steel's Web
+            Developer BootCamp on Udemy. I've since learned more about the
+            original three languages and moved onto become confident with
+            NodeJS, ExpressJS, MongoDB and React - I've since started building
+            my own projects without the use of tutorials
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+
+      <section id="Projects">
+        <div class="projects-div">
+          <h1>Projects</h1>
+
+          <div class="projects-img-container">
             <div>
-                <h1>Skills</h1>
-
-                <div class="front-end-skills-container">
-                    <img src="./images/html.png" alt="HTML5 Logo">
-                    <img src="./images/css-3.png" alt="CSS3 Logo">
-                    <img src="./images/Js_logo.png" alt="JavaScript Logo">
-                </div>
-
-                <div class="back-end-skills-container">
-                    <div class="img-container">
-                        <img src="./images/nodejs-icon.svg" alt="node JS icon">
-                        <p>Strong understanding of Back-End JavaScript</p>
-                        <p>NPM and Modules</p>
-                        <p>MVP</p>
-                        <p>Dynamic templating with EJS</p>
-                        <p>Good knowledge of the ExpressJS framework</p>
-                        <p>Rest API</p>
-                        <p>Full CRUD application with MongoDB</p>
-                    </div>
-            
-                    <div class="img-container">
-                        <img src="./images/expressjs.svg" alt="express js icon">
-                        <p>RESTful Routing</p>
-                        <p>Connecting Express to MongoDB</p>
-                        <p>Serving static assets</p>
-                        <p>Express error handling with custom error handling</p>
-                        <p>Express Router, cookies, session and Flash</p>
-                        <p>Authentication with encryption</p>
-                        <p>Security</p>
-                    </div>
-                    
-                    <div class="img-container">
-                        <img src="./images/react-2.svg" alt="react JS icon">
-                        <p>JSX</p>
-                        <p>Rendering elements</p>
-                        <p>Functional and Class components</p>
-                        <p>Props</p>
-                        <P>Top-Down Flow of Data</P>
-                        <p>Hooks - useState and useEffect</p>
-                        <p>Styling</p>
-                        <p>Using APIs with React</p>
-                    </div>
-                    
-                    <div class="img-container">
-                        <img src="./images/mongodb-icon-1.svg" alt="Mongo DB icon">
-                        <p>One to One, One to Many, One to Few and Many to Many database schemas</p>
-                        <p>Validation</p>
-                        <p>Full CRUD</p>
-                    </div>
-                    
-                    <div class="img-container">
-                        <img src="./images/wordpress-blue.svg" alt="Wordpress icon">
-                        <p>Custom website creation</p>
-                        <p>Use of plugins</p>
-                        <p>Elementor</p>
-                        <p>Themes</p>
-                        <p>Forms</p>
-                        <p>WooCommerce</p>
-                    </div>
-                </div>
+              <img
+                src="./images/shotsnapp-MyQuiz.png"
+                alt="screenshot of My Quiz"
+              />
+              <a href="./StaticProjects/MyQuiz/Quiz.html"
+                ><button>My Quiz</button></a
+              >
             </div>
-        </section>
-
-<!-- About Section -->
-
-        <section id="About">
             <div>
-
-                <h1>About</h1>
-            
-                <p>A professional full-stack web developer</p>
-
-                <p class="certificate-link"><a href="./images/BootcampCertificate.pdf">BootCamp Certificate</a></p>
-
-                <p>Around two years ago, I started to learn HTML, CSS and JavaScript with TreeHouse as it was something I'd wanted to do ever since I was around 10 years old and used my first computer in primary school. However, I took a different route in education and this was left by the wayside, recently my passion has been re-ignited.
-                    <br>
-                    <br>
-                After becoming confident with these three languages, I decided to take a plunge on a full stack course which was Colt Steel's Web Developer BootCamp on Udemy. I've since learned more about the original three languages and moved onto become confident with NodeJS, ExpressJS, MongoDB and React - I've since started building my own projects without the use of tutorials</p>
-
+              <img
+                src="./images/shotsnapp-ClassesSite.png"
+                alt="screenshot of Classes Site"
+              />
+              <a href="https://github.com/Pawson1988/TeacherAdmin"
+                ><button>Class Admin Site</button></a
+              >
             </div>
-        </section>
-
-       <!-- Projects section -->
-
-        <section id="Projects">
-            <div class="projects-div">
-                <h1>Projects</h1>
-
-                <div class="projects-img-container">
-                    
-                    <div>
-                        <img src="./images/shotsnapp-MyQuiz.png" alt="screenshot of My Quiz">
-                        <a href="./StaticProjects/MyQuiz/Quiz.html"><button>My Quiz</button></a>
-                    </div>
-                    <div>
-                        <img src="./images/shotsnapp-ClassesSite.png" alt="screenshot of Classes Site">
-                        <a href="https://github.com/Pawson1988/TeacherAdmin"><button>Class Admin Site</button></a>
-                    </div>
-                    <div>
-                        <img src="./images/shotsnapp-YelpCamp.png" alt="screenshot of YelpCamp">
-                        <a href="https://github.com/Pawson1988/YelpCampWebDevBootcamp"><button>YelpCamp</button></a>
-                    </div>
-                    
-                </div>
-                
+            <div>
+              <img
+                src="./images/shotsnapp-YelpCamp.png"
+                alt="screenshot of YelpCamp"
+              />
+              <a href="https://github.com/Pawson1988/YelpCampWebDevBootcamp"
+                ><button>YelpCamp</button></a
+              >
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+
+      <section id="Contact">
+        <div class="Contact-div">
+          <h1>Contact Form</h1>
+
+          <div class="contact-div-container">
+            <form class="contact-form" action="" method="POST">
+              <label class="form-element-label" for="name">Name</label>
+              <input
+                class="form-element"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name...."
+                required
+              />
+              <label class="form-element-label" for="email">Email</label>
+              <input
+                class="form-element"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email...."
+                required
+              />
+              <label class="form-element-label" for="message">Message</label>
+              <textarea
+                class="form-element"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Write your message here....."
+                required
+              ></textarea>
+              <button class="form-button">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
 
     </div>
 
     <a href="#"><button class="backToTopBtn">Back to Top</button></a>
-</body>
+  </body>
 </html>
