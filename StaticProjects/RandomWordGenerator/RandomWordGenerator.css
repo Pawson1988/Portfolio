@@ -1,0 +1,79 @@
+p {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+nav {
+    margin-bottom: 3%;
+}
+
+.header2 {
+    margin-bottom: 2%;
+}
+    
+.blockquote1 {
+    margin-bottom: 2%;
+}
+
+.header3 {
+    
+    border-bottom: solid gray 1px;
+    width: 60%;
+    padding-bottom: 2%;
+    margin:  0 auto 3% auto;
+}
+
+.Reset-btn {
+    margin: auto;
+    width: 10%;
+    background-color: royalblue;
+}
+
+.Reset-btn:hover {
+    border: 1px solid rgb(5, 5, 104);
+    background-color: rgb(7, 1, 44);
+    color: snow;
+}
+
+.Verbs-container {
+    border: 1px black solid;
+    margin-top: 4%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.Nouns-container {
+    border: 1px black solid;
+    margin-top: 4%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.Adjectives-container {
+    border: 1px black solid;
+    margin-top: 4%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.Adverbs-container {
+    border: 1px black solid;
+    margin-top: 4%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.Linkers-container {
+    border: 1px black solid;
+    margin-top: 4%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.RandomWords-container {
+    border: 1px black solid;
+    margin-top: 4%;
+    height: 150px;
+    border-radius: 10px;
+}
+
