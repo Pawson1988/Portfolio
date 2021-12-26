@@ -240,20 +240,26 @@ section > div > p:last-of-type {
 }
 
 .form-element {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
     font-family: sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+    outline: none;
+    background: rgba(128, 128, 128, 0);
+    border: none;
+    border-bottom: rgb(182, 181, 181) 2px solid;
+}
+
+.form-element:hover, .form-element:focus {
+    border-bottom:rgb(53, 175, 138) 4px solid;
 }
 
 .form-element-label {
     margin-top: 2rem;
     border-radius: 5px;
     font-family: sans-serif;
-    font-size: 1.5rem;
-    align-self: center;
+    font-size: 2rem;
+    color: rgb(53, 175, 138);
 }
 
 .form-button {
