@@ -58,6 +58,7 @@ function initMap() {
     const marker = new google.maps.Marker({
       position: places[i],
       map: map,
+      label: "Te Amo!",
       icon: heartImg,
       animation: google.maps.Animation.DROP,
     });
