@@ -1,5 +1,5 @@
 
-/* Global styles */
+/* Global styles ----------------------------------------------------------------------------------------------------------*/
 
 *, *:before, *::after {
     box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
     
 }
 
-/* Nav Bar Styles */
+/* Nav Bar Styles ---------------------------------------------------------------------------------------------------------*/
 
 a:link, a:visited {
     text-decoration: none;
@@ -89,7 +89,7 @@ li {
     height: 100%;
 }
 
-/* Generic Section Styles */
+/* Generic Section Styles --------------------------------------------------------------------------------------------------*/
 
 section {
     width: 100%;
@@ -138,7 +138,7 @@ section > div > p:last-of-type {
     margin-bottom: 9%;
 }
 
-/* About section Styles */
+/* About section Styles -------------------------------------------------------------------------------------------------*/
 
 #About > div > img {
     transform: skewY(-3deg);
@@ -157,7 +157,7 @@ section > div > p:last-of-type {
     color: rgb(18, 128, 95);
 }
 
-/* Skills section styles */
+/* Skills section styles ---------------------------------------------------------------------------------------------------*/
 
 .front-end-skills-container {
     display: flex;
@@ -198,7 +198,7 @@ section > div > p:last-of-type {
     text-align: center;
 }
 
-/* Projects section styles */
+/* Projects section styles -----------------------------------------------------------------------------------------------*/ 
 
 .projects-img-container {
     display: flex;
@@ -300,7 +300,7 @@ button:hover {
     opacity: .5;
 }
 
-/* Media queries for larger devices */
+/* Media queries for larger devices -----------------------------------------------------------------------------------------*/
 
 @media only screen and (min-width: 768px) {
     
