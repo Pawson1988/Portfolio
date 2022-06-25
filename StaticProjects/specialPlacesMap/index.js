@@ -50,15 +50,32 @@ function initMap() {
     const infowindow = new google.maps.InfoWindow({
       content: "",
     });
+    const heartImg = {
+      url: "imgs/like.png",
+      scaledSize: new google.maps.Size(60, 60),
+    };
+
     const marker = new google.maps.Marker({
       position: places[i],
       map: map,
+      icon: heartImg,
+      animation: google.maps.Animation.DROP,
     });
+
+    function toggleBounce() {
+      if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+      } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
+
     // To get position of current marker when looping through markers for the tour
     markersArray.push(marker);
-
     infowindow.setContent(placeNames[i].infoContent);
-    marker.addListener("mouseover", () => {
+
+    marker.addListener("click", toggleBounce);
+    marker.addListener("click", () => {
       infowindow.open({
         anchor: marker,
         map: map,
@@ -66,6 +83,7 @@ function initMap() {
       });
     });
   }
+
   // map is passed as an argument to place the array outside of the main initMap function.
   loopThroughMarkers(map);
 
