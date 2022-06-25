@@ -60,22 +60,13 @@ function initMap() {
       map: map,
       label: "Te Amo!",
       icon: heartImg,
-      animation: google.maps.Animation.DROP,
+      animation: google.maps.Animation.BOUNCE,
     });
-
-    function toggleBounce() {
-      if (marker.getAnimation() !== null) {
-        marker.setAnimation(null);
-      } else {
-        marker.setAnimation(google.maps.Animation.BOUNCE);
-      }
-    }
 
     // To get position of current marker when looping through markers for the tour
     markersArray.push(marker);
     infowindow.setContent(placeNames[i].infoContent);
 
-    marker.addListener("click", toggleBounce);
     marker.addListener("click", () => {
       infowindow.open({
         anchor: marker,
