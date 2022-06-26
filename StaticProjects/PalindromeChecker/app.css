@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(210deg, rgb(90, 192, 90), darkgreen);
+}
+
+.defaultBackground {
+    background: linear-gradient(210deg, rgb(90, 192, 90), darkgreen);
+}
+
+.isPalindrome {
+    background: linear-gradient(210deg, rgb(103, 118, 204), rgb(18, 31, 201));
+}
+
+.isNotPalindrome {
+    background: linear-gradient(210deg, rgb(189, 116, 103), rgb(211, 32, 32));
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+}
+
+.centre-container {
+    background: linear-gradient(30deg, rgb(90, 192, 90), darkgreen);
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    padding: 2rem;
+    color: rgb(131, 177, 236);
+    border-radius: 0.5rem;
+    width: 50vw;
+}
+
+#pal {
+    width: 80%;
+    margin: 1.5rem auto;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: red 2px solid;
+    background-color: rgba(0, 128, 0, 0);
+    color:rgb(172, 196, 228);
+}
+
+#pal:focus, #pal:hover {
+    outline: none;
+    border: none;
+    border-bottom: darkorange 2px solid;
+}
+
+button {
+    margin-bottom: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(23, 180, 201);
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(160, 232, 241);
+    color: darkgreen;
+}
+
+.result {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}

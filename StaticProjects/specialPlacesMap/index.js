@@ -63,7 +63,7 @@ function initMap() {
       animation: google.maps.Animation.BOUNCE,
     });
 
-    // To get position of current marker when looping through markers for the tour
+    // To save and get position of current marker when looping through markers for the tour
     markersArray.push(marker);
     infowindow.setContent(placeNames[i].infoContent);
 
@@ -79,7 +79,7 @@ function initMap() {
   // map is passed as an argument to place the array outside of the main initMap function.
   loopThroughMarkers(map);
 
-  // to remember the last set position on places dive in order to remove it when user clicks a new one
+  // to remember the last set position on places div in order to remove it when user clicks a new one
   let last = 0;
   for (let i = 0; i < placesDivs.length; i++) {
     placesDivs[i].addEventListener("click", function (e) {
