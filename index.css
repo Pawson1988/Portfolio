@@ -313,12 +313,13 @@ button:hover {
 @media only screen and (min-width: 768px) {
     
     .container {
-        background: url("./images/London-unsplash.jpg");
+        background-image: url("./images/London-unsplash.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position-y: 30%;
         background-color: rgba(0, 0, 0, 0.2);
         background-blend-mode: darken;
+        background-size: cover;
         display: flex;
         flex-direction: column;
         align-items: center;
