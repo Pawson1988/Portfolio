@@ -78,6 +78,14 @@ li {
     color:lightcyan;
 }
 
+.highlighted-live-projects {
+    color: white !important;
+}
+
+.highlighted-live-projects:hover {
+    color: rgb(147, 228, 243) !important;
+}
+
 .container {
     background:linear-gradient(rgb(211, 188, 211), rgb(214, 167, 167)) ;
     /* background: url("./images/London-unsplash.jpg"); */
