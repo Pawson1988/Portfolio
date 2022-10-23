@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 82%;
+    margin-left: 9%;
+    margin-top: 3rem;
+}
+
+.word-container {
+    margin-bottom: 15px;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-bottom-right-radius: 15px;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out; 
+    transition: all 1.5s ease-in;
+}
+
+.word1 {
+    margin-bottom: 8px;
+    font-size: large;
+    font-weight: 500;
+    margin-right: 2.5rem;
+}
+
+.word2 {
+    margin-right: 10px;
+}
+
+.word2, .word3 {
+    height: 1.5rem;
+    width: 15rem;
+    border: none;
+    border-bottom: 1px gray solid;
+    -webkit-transition: all 1.5s ease-out;
+    -moz-transition: all 1.5s ease-out;
+    -o-transition: all 1.5s ease-out; 
+    transition: all 1.5s ease-in;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.scoreDiv {
+    position: fixed;
+    background-color: rgb(174, 230, 128);
+    opacity: 0.8;
+    width: 9%;
+}
+
+.score2, .score3, .no-verbs {
+    font-size: 1.5rem;
+}
+
+.scoreDivInner > div {
+    margin-bottom: 2rem;
+}
+
