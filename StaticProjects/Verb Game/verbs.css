@@ -36,6 +36,7 @@
     width: 15rem;
     border: none;
     border-bottom: 1px gray solid;
+    border-bottom-right-radius: 8px;
     -webkit-transition: all 1.5s ease-out;
     -moz-transition: all 1.5s ease-out;
     -o-transition: all 1.5s ease-out; 
