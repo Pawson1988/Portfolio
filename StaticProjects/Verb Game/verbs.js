@@ -439,7 +439,14 @@ let verbsNotRandom = [
     }
 ]
 
-const verbs = shuffleArray(verbsNotRandom);
+let noOfWords = "";
+
+do {
+    noOfWords = prompt("How many words do you want to show?: (Max verbs is: " + verbsNotRandom.length + ") ");
+} while (noOfWords > verbsNotRandom.length);
+
+
+const verbs = shuffleArray(verbsNotRandom).slice(0, noOfWords);
 
 const container = document.querySelector(".container");
 
@@ -454,10 +461,10 @@ for(let i = 0; i < verbs.length; i++){
     let word3Input = document.createElement("input");
     word2Input.setAttribute("class", "word2");
     word2Input.setAttribute("type", "text");
-    word2Input.setAttribute("placeholder", "Write the past verb here!");
+    word2Input.setAttribute("placeholder", "past verb!");
     word3Input.setAttribute("class", "word3");
     word3Input.setAttribute("type", "text");
-    word3Input.setAttribute("placeholder", "Write the past participle verb here!");
+    word3Input.setAttribute("placeholder", "past participle!");
     newDiv.appendChild(word2Input);
     newDiv.appendChild(word3Input);
 }
@@ -488,17 +495,19 @@ let word3ScoreTracker = [];
                     score2.textContent = "Past Verbs: " + word2Score;
                     verbs[i].pastDone = true;
                 }
-                console.log("word2 score: " + word2Score);
+                
                 word2[i].style.backgroundColor = "#3fbb29";
                 word2[i].disabled = true;
                 word2[i].style.color = "white";
                 word2[i].style.textTransform = "uppercase";
+
                 if(word2Score === verbs.length){
                     score2.style.backgroundColor = "blue";
                     score2.style.color = "white";
                     alert("You got all the past verbs!! congrats!!");
                     
                 }
+
                 if(verbs[i].participleDone === true && verbs[i].pastDone === true){
                     word2[i].parentElement.style.backgroundColor = "#a9e7b3";
                 }
@@ -517,16 +526,18 @@ let word3ScoreTracker = [];
                     score3.textContent = "Past Participle Verbs: " + word3Score;
                     verbs[i].participleDone = true; 
                 }
-                console.log("word3 score: " + word3Score);
+                
                 word3[i].style.backgroundColor = "#3fbb29";
                 word3[i].disabled = true;
                 word3[i].style.color = "white";
                 word3[i].style.textTransform = "uppercase";
+
                 if(word3Score === verbs.length){
                     score3.style.backgroundColor = "blue";
                     score3.style.color = "white";
                     alert("You got all the past participle verbs!! congrats!!");
                 }
+                
                 if(verbs[i].participleDone === true && verbs[i].pastDone === true){
                     word3[i].parentElement.style.backgroundColor = "#a9e7b3";
                 }
