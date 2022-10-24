@@ -439,6 +439,12 @@ let verbsNotRandom = [
     }
 ]
 
+for(let i = 0; i < verbsNotRandom.length; i++){
+    if(verbsNotRandom[i].alternative === ""){
+        verbsNotRandom[i].alternative = verbsNotRandom[i].participle;
+    }
+}
+
 let noOfWords = "";
 
 do {
